@@ -208,7 +208,7 @@ chat.pb.go chat.proto
 ---
 class: center, middle
 
-# Implement the Chat Server
+# Implement the Server
 
 ---
 
@@ -239,7 +239,7 @@ func main() {
 
 ---
 
-# Chat Server StreamMessages()
+# Server StreamMessages()
 
 server/server.go
 ```go
@@ -268,7 +268,7 @@ type ChatServer interface {
 
 ---
 
-# Chat Server listenToClient()
+# Server listenToClient()
 
 server/server.go
 ```go
@@ -295,7 +295,7 @@ func (c *chatServer) StreamMessages(
 ```
 
 ---
-# Chat Server Start()
+# Server Start()
 
 server/server.go
 ```go
@@ -315,11 +315,11 @@ func (c *chatServer) Start() {
 ---
 class: center, middle
 
-# Implement the Chat Client
+# Implement the Client
 
 ---
 
-# Chat Client main()
+# Client main()
 
 client/client.go
 ```go
@@ -349,7 +349,7 @@ func main() {
 
 ---
 
-# Chat Client receiveMessages()
+# Client receiveMessages()
 
 client/client.go
 ```go
@@ -371,7 +371,7 @@ func receiveMessages(
 
 ---
 
-# Chat Client watchInput()
+# Client watchInput()
 
 client/client.go
 ```go
